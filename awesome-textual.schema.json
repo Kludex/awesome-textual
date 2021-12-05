@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Kludex/awesome-textual/blob/main/awesome-textual.schema.json",
+  "title": "Awesome Textual",
+  "description": "A schema for the awesome-textual repository",
+  "type": "object",
+  "properties": {
+    "apps": {
+      "description": "Textual applications",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "repo": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "picture": {
+            "type": "string"
+          }
+        },
+        "required": ["repo", "name", "description"]
+      }
+    },
+    "widgets": {
+      "description": "Textual widgets",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "repo": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "snippet": {
+            "type": "object",
+            "properties": {
+              "raw": {
+                "type": "string"
+              },
+              "lines": {
+                "type": "string"
+              }
+            }
+          },
+          "picture": {
+            "type": "string"
+          }
+        },
+        "required": ["repo", "name", "description"]
+      }
+    }
+  }
+}

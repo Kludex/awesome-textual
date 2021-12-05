@@ -1,0 +1,58 @@
+<!--lint disable double-link-->
+
+# Awesome Textual | [![Awesome](https://awesome.re/badge-flat.svg)](https://github.com/sindresorhus/awesome)
+
+> A curated list of awesome things related to [Textual](https://github.com/willmcgugan/textual).
+
+[Textual](https://github.com/willmcgugan/textual) is a TUI (Text User Interface) framework for Python inspired by modern web development.
+
+## Contents
+
+- [Code Sharing](#code)
+    - [Applications](#applications)
+    - [Widgets](#widgets)
+- [Resources](#resources)
+    - [Tutorials](#tutorials)
+    - [Videos](#videos)
+
+## Code Sharing
+
+
+### Applications
+{% for app in apps %}
+<details>
+<summary><b><a href="{{ app.repo }}">{{ app.name }}</a></b> - {{ app.description }} </summary>
+<p>
+
+{% if app.picture %}
+![image info]({{ app.picture }} "{{ app.name }}")
+{% endif %}
+
+</p>
+</details>
+
+{% endfor %}
+
+### Widgets
+{% for widget in widgets %}
+<details>
+<summary><b><a href="{{ widget.repo }}">{{ widget.name }}</a></b> - {{ widget.description }} </summary>
+<p>
+
+{% if widget.picture %}
+![image info]({{ widget.picture }} "{{ widget.name }}")
+{% endif %}
+
+{% if widget.snippet %}
+```python
+{{ widget.snippet }}
+```
+{% endif %}
+</p>
+</details>
+
+{% endfor %}
+
+## License
+
+This project is under the MIT License.

@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=awesome-textual.schema.json
+apps:
+  - name: Jenkins-tui
+    description: Terminal based user interface for Jenkins.
+    repo: https://github.com/chelnak/jenkins-tui/
+    picture: https://raw.githubusercontent.com/chelnak/jenkins-tui/main/media/home_view.png
+
+  - name: kaskade
+    description: Terminal based user interface for kafka.
+    repo: https://github.com/sauljabin/kaskade
+    picture: https://raw.githubusercontent.com/sauljabin/kaskade/main/screenshots/dashboard.png
+
+  - name: AutoCompleter
+    description: A simple autocompleter for the terminal.
+    repo: https://github.com/chelnak/textual-experiments
+
+widgets:
+  - name: FlitTextWidget
+    description: A widget that will generate and display figlet text.
+    repo: https://github.com/chelnak/textual-experiments
+    snippet:
+      raw: https://raw.githubusercontent.com/chelnak/textual-experiments/main/src/figlet_widget.py
+      lines: 42-88
