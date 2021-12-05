@@ -6,6 +6,8 @@
 
 [Textual](https://github.com/willmcgugan/textual) is a TUI (Text User Interface) framework for Python inspired by modern web development.
 
+**To contribute, create an issue first. I'm still organizing the project. :pray:**
+
 ## Contents
 
 - [Code Sharing](#code)
